@@ -1,10 +1,8 @@
 import { Module } from '@nestjs/common';
 import { GenerosModule } from './generos/generos.module';
 import { PeliculasModule } from './peliculas/peliculas.module';
-import { StaffsModule } from './staffs/staffs.module';
 import { TypeOrmModule } from '@nestjs/typeorm/dist/typeorm.module';
 import { ConfigModule } from '@nestjs/config';
-import { EntradasModule } from './entradas/entradas.module';
 import { ServicesModule } from './services/services.module';
 
 @Module({
@@ -22,8 +20,6 @@ import { ServicesModule } from './services/services.module';
     }),
     GenerosModule,
     PeliculasModule,
-    StaffsModule,
-    EntradasModule,
     ServicesModule,
   ],
 })
